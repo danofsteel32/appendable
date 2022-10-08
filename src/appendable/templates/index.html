@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Appendable{% endblock %}
+
+{% block content %}
+<main>
+  <h1>Appendable</h1>
+  <p>Welcome to Appendable! Check out the
+  <a href="{{ url_for('dashboard.index', app_name='demo') }}">demo</a>.</p>
+</main>
+{% endblock %}

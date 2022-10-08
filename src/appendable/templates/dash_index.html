@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Appendable: {{ app_name.title() }}{% endblock %}
+
+{% block content %}
+<main>
+  <section>
+    <header>
+      <h2>{{ app_name.title() }}</h2>
+    </header>
+{% for list in lists %}
+    <aside>
+      <h3>{{ list.name }}</h3>
+      <ul>
+    {% for item in list.items %}
+      <li>{{ item }}</li>
+    {% endfor %}
+      </ul>
+    </aside>
+{% endfor %}
+  </section>
+</main>
+{% endblock %}
